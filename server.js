@@ -14,7 +14,8 @@ const app = express()
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://shopnow-frontend-seven.vercel.app/'  // Vercel deploy hone ke baad URL yahan daalo
+    'https://shopnow-frontend-seven.vercel.app',
+    'https://shopnow-frontend-oqy2g71oa-krushna-chavan-s-projects.vercel.app'
   ]
 }))
 
