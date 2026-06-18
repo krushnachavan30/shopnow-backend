@@ -11,7 +11,13 @@ const adminRoutes = require('./routes/adminRoutes')
 
 const app = express()
 
-app.use(cors({ origin: 'http://localhost:3000' }))
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://shopnow-frontend-seven.vercel.app/'  // Vercel deploy hone ke baad URL yahan daalo
+  ]
+}))
+
 app.use(express.json())
 
 // Routes
